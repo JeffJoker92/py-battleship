@@ -70,7 +70,7 @@ class Battleship:
         deck = ship.get_deck(row, column)
 
         if not deck or not deck.is_alive:
-            return "Miss"
+            return "Miss!"
 
         ship.fire(row, column)
 
