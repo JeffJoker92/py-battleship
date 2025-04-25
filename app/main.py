@@ -67,11 +67,6 @@ class Battleship:
         if not ship:
             return "Miss!"
 
-        deck = ship.get_deck(row, column)
-
-        if not deck or not deck.is_alive:
-            return "Miss!"
-
         ship.fire(row, column)
 
         if ship.is_drowned:
